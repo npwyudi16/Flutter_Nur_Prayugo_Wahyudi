@@ -1,10 +1,16 @@
+import 'hewan.dart';
 import 'mobil.dart';
 
 void main(List<String> args) {
-  var muatanHewan = Mobil();
-  print('Muatan Max Mobil adalah : ${muatanHewan.kapasitas} kg');
-  print('List Hewan yang akan di angkut : ${muatanHewan.muatan}');
-  print('Total Berat Hewan sebelum di angkut : ${muatanHewan.tambahMuatan} kg');
+  final Hewan kura_kura = Hewan(4);
+  final Hewan marmut = Hewan(2);
+  final Hewan ikan = Hewan(5);
 
-  muatanHewan.totalMuatan();
+  final Mobil tosha = Mobil(50);
+
+  tosha.tambahMuatan(kura_kura);
+  tosha.tambahMuatan(marmut);
+  tosha.tambahMuatan(ikan);
+
+  print('Total Seluruh Muatan Hewan : ${tosha.totalMuatan()} Kg');
 }
