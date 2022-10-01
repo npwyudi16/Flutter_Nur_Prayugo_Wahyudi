@@ -1,0 +1,6 @@
+{
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.enableCompletionCommitCharacters": true,
+    "dart.previewCommitCharacters": true
+}
